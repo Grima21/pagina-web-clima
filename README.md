@@ -1,87 +1,24 @@
-pagina-web-clima
-🌤️ Página Web del Clima
-Aplicación web para consultar el clima actual y el pronóstico de los próximos días en cualquier ciudad del mundo.
-Construida con React, Vite y TypeScript, usando la API de OpenWeatherMap.
+# Página Web del Clima ☁️
 
-🚀 Características
-Búsqueda por ciudad para mostrar el clima actual.
+**Demo:** https://TU-DEMO.vercel.app
 
-Pronóstico de 5 días con información detallada.
+Pequeña app de clima enfocada en velocidad y UX: busca por ciudad, geolocaliza tu ubicación y permite alternar °C/°F con resultados rápidos y claros.
 
-Datos en tiempo real usando la API de OpenWeatherMap.
+## Features
+- 🔎 Búsqueda por ciudad con debounce
+- 📍 Geolocalización (si el usuario lo permite)
+- 🌡️ Alternar °C / °F (persistente)
+- 💨 Viento, humedad, descripción e ícono meteo
+- ⚠️ Mensajes de error claros y accesibles
 
-Compatibilidad móvil con diseño responsive.
+## Stack
+- Vite + React + TypeScript (opcional) + Tailwind
+- API: OpenWeather (Current Weather Data)
 
-Interfaz moderna y minimalista.
-
-🛠️ Tecnologías utilizadas
-⚛ React — Librería de JavaScript para la UI.
-
-⚡ Vite — Entorno de desarrollo rápido.
-
-📘 TypeScript — Tipado estático para mayor robustez.
-
-🎨 CSS Modules / TailwindCSS (dependiendo de lo que uses) para los estilos.
-
-🌦 OpenWeatherMap API — Datos meteorológicos.
-
-📦 Instalación y uso
-Clonar el repositorio:
-
-bash
-Copiar
-Editar
-git clone https://github.com/Grima21/pagina-web-clima.git
-Entrar en la carpeta del proyecto:
-
-bash
-Copiar
-Editar
+## Empezar
+```bash
+git clone https://github.com/Grima21/pagina-web-clima
 cd pagina-web-clima
-Instalar dependencias:
-
-bash
-Copiar
-Editar
 npm install
-Configurar tu API Key:
-
-Crea un archivo .env en la raíz del proyecto.
-
-Agrega tu clave de OpenWeatherMap:
-
-ini
-Copiar
-Editar
-VITE_API_KEY=tu_api_key_aqui
-Iniciar servidor de desarrollo:
-
-bash
-Copiar
-Editar
 npm run dev
-Abrir en el navegador:
 
-arduino
-Copiar
-Editar
-http://localhost:5173
-📂 Estructura del proyecto
-csharp
-Copiar
-Editar
-pagina-web-clima/
-├── public/ # Archivos estáticos
-├── src/
-│ ├── components/ # Componentes reutilizables
-│ ├── pages/ # Páginas principales
-│ ├── services/ # Lógica para consumir APIs
-│ ├── App.tsx # Componente principal
-│ └── main.tsx # Punto de entrada
-├── .env.example # Ejemplo de variables de entorno
-├── package.json
-└── README.md
-📸 Capturas de pantalla
-
-📄 Licencia
-Este proyecto está bajo la licencia MIT — libre para uso personal y comercial.
